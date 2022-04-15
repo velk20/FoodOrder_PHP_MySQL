@@ -4,6 +4,14 @@
     <div class="wrapper">
         <h1>Add Admin</h1>
         <br><br>
+
+        <?php
+        if (isset($_SESSION['add'])) {
+            echo $_SESSION['add'];
+            unset($_SESSION['add']);
+        }
+        ?>
+
         <form action="" method="POST">
             <table class="tbl-30">
                 <tr>
@@ -34,3 +42,37 @@
 </div>
 
 <?php include('partials/footer.php'); ?>
+
+<?php
+    //Process the value from Form and Save it in DB
+    //Check whether the submit button is clicked or not
+    if (isset($_POST['submit']))
+    {
+        //Button clicked
+        $full_name = $_POST['full_name'];
+         $username = $_POST['username'];
+         $password = md5($_POST['password']);// Password Encrypt with md5
+
+         //SQL to Save data into DB
+        $sql = "INSERT INTO tbl_admin SET 
+            full_name='$full_name',
+            username = '$username',
+            password = '$password'
+        ";
+
+        //save to DB
+        $res = mysqli_query($conn,$sql) or die(mysqli_error());
+        if ($res == TRUE){
+            $_SESSION['add'] = "Admin Added Successfully";
+            header("location:".SITEURL.'admin/manage-admin.php');
+        }else{
+            $_SESSION['add'] = "Failed to Add Admin";
+            header("location:".SITEURL.'admin/add-admin.php');
+        }
+
+
+    }
+
+
+
+?>

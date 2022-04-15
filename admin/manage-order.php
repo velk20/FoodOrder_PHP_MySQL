@@ -19,8 +19,8 @@
                 <td>Angel Mladenov</td>
                 <td>angel20</td>
                 <td>
-                    <a href="#" class="btn-secondary"> Update Admin</a>
-                    <a href="#" class="btn-danger">  Delete Admin</a>
+                    <a href="#" class="btn btn-info"> Update Admin</a>
+                    <a href="#" class="btn btn-danger">  Delete Admin</a>
 
 
                 </td>
@@ -31,8 +31,8 @@
                 <td>Angel Mladenov</td>
                 <td>angel20</td>
                 <td>
-                    <a href="#" class="btn-secondary"> Update Admin</a>
-                    <a href="#" class="btn-danger">  Delete Admin</a>
+                    <a href="#" class="btn btn-info"> Update Admin</a>
+                    <a href="#" class="btn btn-danger">  Delete Admin</a>
 
 
                 </td>
@@ -43,8 +43,8 @@
                 <td>Angel Mladenov</td>
                 <td>angel20</td>
                 <td>
-                    <a href="#" class="btn-secondary"> Update Admin</a>
-                    <a href="#" class="btn-danger">  Delete Admin</a>
+                    <a href="#" class="btn btn-info"> Update Admin</a>
+                    <a href="#" class="btn btn-danger">  Delete Admin</a>
 
 
                 </td>
