@@ -104,15 +104,34 @@ table tr td{
 }
 
 .col-4 {
-  width: 18%;
   background-color: white;
   margin: 1%;
   padding: 2%;
-  float: left;
+}
+
+
+
+
+.success {
+  color: #1ed268;
+  font-weight:bold ;
+
+}
+.error{
+  color: #ff4757;
+  font-weight:bold ;
 }
 /*Footer CSS*/
 .footer{
   background-color: #ff4757;
   color: white;
 
+}
+
+/*Login CSS*/
+.login {
+  border: 1px solid grey;
+  width: 20%;
+  margin: 10% auto;
+  padding: 2%;
 }

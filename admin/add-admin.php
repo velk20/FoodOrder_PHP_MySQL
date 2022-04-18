@@ -13,30 +13,31 @@
         ?>
 
         <form action="" method="POST">
-            <table class="tbl-30">
-                <tr>
-                    <td> Full Name: </td>
-                    <td><input type="text" name="full_name" placeholder="Enter Your Name"></td>
-                </tr>
 
-                <tr>
-                    <td>Username:</td>
-                    <td><input type="text" name="username" placeholder="Your Username"></td>
 
-                </tr>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Full Name:</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="full_name" class="form-control" id="inputEmail3" placeholder="Your Full Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+                    <div class="col-sm-3">
+                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Your Password">
+                    </div>
+                </div>
 
-                <tr>
-                    <td>Password:</td>
-                    <td><input type="password" name="password" placeholder="Your Password"></td>
 
-                </tr>
 
-                <tr>
-                    <td colspan="2">
                         <input type="submit" name="submit" value="Add Admin" class="btn btn-success">
-                    </td>
-                </tr>
-            </table>
+
         </form>
     </div>
 </div>
@@ -63,10 +64,10 @@
         //save to DB
         $res = mysqli_query($conn,$sql) or die(mysqli_error());
         if ($res == TRUE){
-            $_SESSION['add'] = "Admin Added Successfully";
+            $_SESSION['add'] = "<div class='success'>Admin Added Successfully</div>";
             header("location:".SITEURL.'admin/manage-admin.php');
         }else{
-            $_SESSION['add'] = "Failed to Add Admin";
+            $_SESSION['add'] = "<div class='error'>Failed to Add Admin</div>";
             header("location:".SITEURL.'admin/add-admin.php');
         }
 
