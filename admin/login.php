@@ -16,6 +16,11 @@
                 echo $_SESSION['login'];
                 unset($_SESSION['login']);
             }
+
+            if (isset($_SESSION['no-login-message'])) {
+                echo $_SESSION['no-login-message'];
+                unset($_SESSION['no-login-message']);
+            }
             ?>
             <form action="" method="POST" class="text-center">
                 <div class="form-group row">
