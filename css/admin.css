@@ -135,3 +135,31 @@ table tr td{
   margin: 10% auto;
   padding: 2%;
 }
+
+.infolink:before
+{
+  content: '?';
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 1.8ex;
+  height: 1.8ex;
+  font-size: 1.4ex;
+  line-height: 1.8ex;
+  border-radius: 1.2ex;
+  margin-right: 4px;
+  padding: 1px;
+  color: blue;
+  background: white;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+
+.infolink:hover:before
+{
+  color: white;
+  background: blue;
+  border-color: white;
+  text-decoration: none;
+}

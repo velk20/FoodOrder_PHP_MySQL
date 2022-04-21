@@ -2,58 +2,86 @@
 <div class="main-content">
     <div class="wrapper">
         <h1>Manage Category</h1>
-
+        <br>
+        <?php
+        if (isset($_SESSION['add'])) {
+            echo $_SESSION['add'];
+            unset($_SESSION['add']);
+        }
+        ?>
         <br>
 
         <!--Button add admin-->
-        <a href="#" class=" btn btn-primary">Add Category</a>
+        <a href="<?php echo SITEURL;?>admin/add-category.php" class=" btn btn-primary">Add Category</a>
         <br>
 
         <br>
         <table class="tbl-full">
             <tr >
                 <th>ID</th>
-                <th>Full Name</th>
-                <th>Username</th>
+                <th>Title</th>
+                <th>Image</th>
+                <th>Featured</th>
+                <th>Active</th>
                 <th>Actions</th>
+
             </tr>
 
-            <tr>
-                <td>1. </td>
-                <td>Angel Mladenov</td>
-                <td>angel20</td>
-                <td>
-                    <a href="#" class="btn btn-info"> Update Admin</a>
-                    <a href="#" class="btn btn-danger">  Delete Admin</a>
+            <?php
+            $sql = "SELECT * FROM tbl_category";
 
+            $res = mysqli_query($conn, $sql);
 
-                </td>
-            </tr>
+            $count = mysqli_num_rows($res);
 
-            <tr>
-                <td>2. </td>
-                <td>Angel Mladenov</td>
-                <td>angel20</td>
-                <td>
-                    <a href="#" class="btn btn-info"> Update Admin</a>
-                    <a href="#" class="btn btn-danger">  Delete Admin</a>
+            $sn = 1;
 
+            if ($count > 0) {
+                while ($row = mysqli_fetch_assoc($res)) {
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $image_name = $row['image_name'];
+                    $featured = $row['featured'];
+                    $active = $row['active'];
 
-                </td>
-            </tr>
+                    ?>
+                    <tr>
+                        <td><?php echo $sn++;?>.</td>
+                        <td><?php echo $title;?></td>
 
-            <tr>
-                <td>3. </td>
-                <td>Angel Mladenov</td>
-                <td>angel20</td>
-                <td>
-                    <a href="#" class="btn btn-info"> Update Admin</a>
-                    <a href="#" class="btn btn-danger">  Delete Admin</a>
+                        <td>
+                            <?php
+                            if ($image_name != "") {
 
+                                ?>
+                                <img src="<?php echo  SITEURL; ?>images/category/<?php echo $image_name;?>"
+                                    width="75px" alt="Image">
+                                    <?php
+                            }else{
+                                //if no image found
+                                echo "<div class='error'>Image Not Added.</div>";
+                            }
 
-                </td>
-            </tr>
+                            ?>
+                        </td>
 
+                        <td><?php echo $featured;?></td>
+                        <td><?php echo $active;?></td>
+                        <td>
+                            <a href="#" class="btn btn-info"> Update Category</a>
+                            <a href="#" class="btn btn-danger">  Delete Category</a>
+                        </td>
+                    </tr>
+                        <?php
+
+                }
+
+            }else{
+                ?>
+                        <td colspan="6"><div class="error">No Category Added.</div></td>
+                <?php
+            }
+            ?>
 
         </table>
     </div>
