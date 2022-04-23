@@ -43,7 +43,7 @@
         ?>
         <br>
 
-        <!--Button add admin-->
+        <!--Button add category-->
         <a href="<?php echo SITEURL;?>admin/add-category.php" class=" btn btn-primary">Add Category</a>
         <br>
 

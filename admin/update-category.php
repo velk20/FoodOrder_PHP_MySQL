@@ -38,15 +38,15 @@
 
 
             <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Title:</label>
+                <label for="title" class="col-sm-2 col-form-label">Title:</label>
                 <div class="col-sm-3">
-                    <input type="text" name="title" class="form-control" id="inputEmail3" value="<?php echo $title;?>">
+                    <input type="text" name="title" class="form-control" id="title" value="<?php echo $title;?>">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label mb-3 " for="customFile">Current Image:</label>
-                <div class="col-sm-3">
+                <label for="current_image" class="col-sm-2 col-form-label mb-3 ">Current Image:</label>
+                <div class="col-sm-3" id="current_image">
                         <?php
                         if ($current_image != "") {
                             ?>
@@ -66,10 +66,10 @@
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Featured:</label>
+                <label for="radio" class="col-sm-2 col-form-label">Featured:</label>
                 <div class="form-check">
-                    <input <?php if($featured=="Yes"){echo "checked";} ?> type="radio" name="featured" value="Yes"> Yes
-                    <input <?php if($featured=="No"){echo "checked";} ?> type="radio" name="featured" value="No"> No
+                    <input id="radio" <?php if($featured=="Yes"){echo "checked";} ?> type="radio" name="featured" value="Yes"> Yes
+                    <input id="radio"<?php if($featured=="No"){echo "checked";} ?> type="radio" name="featured" value="No"> No
                 </div>
 
             </div>
