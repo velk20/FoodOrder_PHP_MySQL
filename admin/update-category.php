@@ -2,6 +2,7 @@
     include ('partials/menu.php');
 
 ?>
+<?php ob_start(); ?>
 
 <div class="main-content">
     <div class="wrapper">
@@ -40,7 +41,7 @@
             <div class="form-group row">
                 <label for="title" class="col-sm-2 col-form-label">Title:</label>
                 <div class="col-sm-3">
-                    <input type="text" name="title" class="form-control" id="title" value="<?php echo $title;?>">
+                    <input required type="text" name="title" class="form-control" id="title" value="<?php echo $title;?>">
                 </div>
             </div>
 
@@ -156,7 +157,7 @@
 
 
 
-
+<?php ob_flush(); ?>
 <?php
 include ('partials/footer.php');
 

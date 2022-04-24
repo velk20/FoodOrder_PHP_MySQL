@@ -18,21 +18,21 @@ include ('partials/menu.php');
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Current Password:</label>
                     <div class="col-sm-3">
-                        <input type="password" name="current_password" class="form-control" id="inputPassword3" placeholder="Your Current Password">
+                        <input required type="password" name="current_password" class="form-control" id="inputPassword3" placeholder="Your Current Password">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">New Password:</label>
                     <div class="col-sm-3">
-                        <input type="password" name="new_password" class="form-control" id="inputPassword3" placeholder="Your New Password">
+                        <input required type="password" name="new_password" class="form-control" id="inputPassword3" placeholder="Your New Password">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password:</label>
                     <div class="col-sm-3">
-                        <input type="password" name="confirm_password" class="form-control" id="inputPassword3" placeholder="Confirm Your New Password">
+                        <input required type="password" name="confirm_password" class="form-control" id="inputPassword3" placeholder="Confirm Your New Password">
                     </div>
                 </div>
 

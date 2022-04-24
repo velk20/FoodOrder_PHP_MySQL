@@ -18,19 +18,19 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Full Name:</label>
                     <div class="col-sm-3">
-                        <input type="text" name="full_name" class="form-control" id="inputEmail3" placeholder="Your Full Name">
+                        <input required type="text" name="full_name" class="form-control" id="inputEmail3" placeholder="Your Full Name">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
                     <div class="col-sm-3">
-                        <input type="text" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
+                        <input required type="text" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
                     <div class="col-sm-3">
-                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Your Password">
+                        <input required type="password" name="password" class="form-control" id="inputPassword3" placeholder="Your Password">
                     </div>
                 </div>
 

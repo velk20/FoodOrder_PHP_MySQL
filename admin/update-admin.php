@@ -31,13 +31,13 @@
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Full Name:</label>
                     <div class="col-sm-3">
-                        <input type="text" name="full_name" value="<?php echo $full_name;?>" class="form-control" id="inputEmail3" placeholder="Your Full Name">
+                        <input required type="text" name="full_name" value="<?php echo $full_name;?>" class="form-control" id="inputEmail3" placeholder="Your Full Name">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Username:</label>
                     <div class="col-sm-3">
-                        <input type="text" value="<?php echo $username;?>" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
+                        <input required type="text" value="<?php echo $username;?>" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
                     </div>
                 </div>
 

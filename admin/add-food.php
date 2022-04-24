@@ -1,4 +1,5 @@
 <?php include ('partials/menu.php');?>
+<?php ob_start(); ?>
 
 <div class="main-content">
     <div class="wrapper">
@@ -16,7 +17,7 @@
             <div class="form-group row">
                 <label for="title_food" class="col-sm-2 col-form-label">Title: </label>
                 <div class="col-sm-3">
-                    <input type="text" name="title" class="form-control" id="title_food"
+                    <input required type="text" name="title" class="form-control" id="title_food"
                            placeholder="Food Title">
                 </div>
             </div>
@@ -24,7 +25,7 @@
             <div class="form-group row">
                 <label for="desc_food" class="col-sm-2 col-form-label">Description: </label>
                 <div class="col-sm-3">
-                    <textarea name="description"  cols="30" rows="5" class="form-control" id="desc_food"
+                    <textarea required name="description"  cols="30" rows="5" class="form-control" id="desc_food"
                               placeholder="Food Description"></textarea>
                 </div>
             </div>
@@ -32,7 +33,7 @@
             <div class="form-group row">
                 <label for="food_price" class="col-sm-2 col-form-label">Price: </label>
                 <div class="col-sm-3">
-                    <input type="number" name="price" class="form-control" id="food_price"
+                    <input required type="number" name="price" class="form-control" id="food_price"
                            placeholder="Food Price">
                 </div>
             </div>
@@ -63,7 +64,7 @@
                                     $id = $row['id'];
                                     $title = $row['title'];
                                     ?>
-                                    <option value="<?php echo $id; ?>"><?php echo $title;?></option>
+                                    <option value="<?= $id; ?>"><?= $title;?></option>
                                     <?php
                                 }
                             }else{
@@ -101,7 +102,9 @@
 
             <div class="form-group row">
                 <label for="inputPassword3" class="col-sm-2 col-form-label"
-                       data-toggle="tooltip" data-placement="left" title="If you pick 'No' the category will not be visible in home page nor category page">Active:
+                       data-toggle="tooltip" data-placement="left"
+                       title="If you pick 'No' the category will not be visible in home page nor category page">
+                    Active:
                 </label>
                 &ensp;&ensp;
                 <div class="form-check">
@@ -147,7 +150,7 @@
             if (isset($_FILES['image']['name'])) {
                 $image_name = $_FILES['image']['name'];
                 if ($image_name != "") {
-                    $source_path = $_FILES['image']['tmp_name'];
+                    $source_path = $_FILES['image']['tmp_name'];//current location of the image
                     $destination_path = "../images/food/" . $image_name;
 
                     $upload = move_uploaded_file($source_path, $destination_path);
@@ -172,9 +175,9 @@
                              active = '$active'
                              ";
 
-                $res2 = mysqli_query($conn, $sql2);
+                $res22 = mysqli_query($conn, $sql2);
 
-                if ($res2 == true) {
+                if ($res22 == true) {
                     $_SESSION['add'] = "<div class='success'>Food Added Successfully.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 } else {
@@ -187,4 +190,5 @@
     </div>
 </div>
 
+<?php ob_flush(); ?>
 <?php include ('partials/footer.php');?>

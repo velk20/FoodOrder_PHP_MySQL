@@ -1,5 +1,5 @@
 <?php include('partials/menu.php');?>
-
+<?php ob_start(); ?>
 <div class="main-content">
     <div class="wrapper">
         <h1>Add Category</h1>
@@ -24,7 +24,7 @@
             <div class="form-group row">
                 <label for="inputEmail3" class="col-sm-2 col-form-label">Title:</label>
                 <div class="col-sm-3">
-                    <input type="text" name="title" class="form-control" id="inputEmail3" placeholder="Category Title">
+                    <input required type="text" name="title" class="form-control" id="inputEmail3" placeholder="Category Title">
                 </div>
             </div>
 
@@ -147,5 +147,5 @@
         ?>
     </div>
 </div>
-
+<?php ob_flush(); ?>
 <?php include('partials/footer.php');?>
