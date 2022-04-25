@@ -1,5 +1,5 @@
-<?php include ('partials/menu.php');?>
 <?php ob_start(); ?>
+<?php include ('partials/menu.php');?>
 
 <div class="main-content">
     <div class="wrapper">
@@ -190,5 +190,5 @@
     </div>
 </div>
 
-<?php ob_flush(); ?>
 <?php include ('partials/footer.php');?>
+<?php ob_flush(); ?>
