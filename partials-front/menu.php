@@ -17,7 +17,7 @@
 <section class="navbar">
     <div class="container">
         <div class="logo">
-            <a href="#" title="Logo">
+            <a href="index.php" title="Logo">
                 <img
                     src="images/logo.png"
                     alt="Restaurant Logo"
@@ -38,7 +38,7 @@
                     <a href="<?php echo SITEURL;?>foods.php">Foods</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="<?php echo SITEURL;?>contacts.php">Contacts</a>
                 </li>
             </ul>
         </div>

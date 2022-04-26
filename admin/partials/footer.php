@@ -1,12 +1,12 @@
 <!-- Footer -->
-<div class="footer">
+<footer class="footer navbar-fixed-bottom">
     <div class="wrapper">
         <p class="text-center">
             &copy; 2022 All rights reserved, Aurora Restaurant. Developed By -
             Angel Mladenov
         </p>
     </div>
-</div>
+</footer>
 <!-- Footer End-->
 </body>
 

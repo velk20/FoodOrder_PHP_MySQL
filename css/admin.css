@@ -123,8 +123,7 @@ table tr td{
 }
 /*Footer CSS*/
 .footer{
-  background-color: #ff4757;
-  color: white;
+
 
 }
 
@@ -222,4 +221,12 @@ table tr td{
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff4757;
+  color: white;
 }

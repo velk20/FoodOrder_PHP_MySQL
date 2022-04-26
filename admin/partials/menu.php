@@ -18,7 +18,7 @@ include('login-check.php');
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Menu -->
 
     <div class="menu text-center">
