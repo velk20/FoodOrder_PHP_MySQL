@@ -43,16 +43,20 @@
                                     echo "<div class='error'>Image not available.</div>";
                                 }else{
                                         ?>
-                                          <img height="120px" width="200px" src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
-                                          <?php
+                                    <img style="cursor: pointer"
+                                         onclick="location.href='<?php echo SITEURL;?>images/food/<?php echo $image_name;?>'"
+                                         width="150px" height="150px"
+                                         src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>"
+                                         class="img-responsive img-curve">                                          <?php
                                   }
                             ?>
 
                         </div>
 
                         <div class="food-menu-desc">
-                            <h4><?php echo  $title?></h4>
-                            <p class="food-price">$<?php echo $price;?></p>
+                            <h4 class="food-title"
+                                onclick="location.href='<?php echo SITEURL;?>product.php?food_id=<?php echo $id;?>'"
+                            ><?php echo $title;?></h4>                            <p class="food-price">$<?php echo $price;?></p>
                             <p class="food-detail"><?php
                                 if (strlen($description) > 120) {
                                     echo substr($description, 0, 120) . '...';
