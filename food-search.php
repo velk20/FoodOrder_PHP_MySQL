@@ -43,7 +43,7 @@
                                     echo "<div class='error'>Image not available.</div>";
                                 }else{
                                         ?>
-                                          <img src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
+                                          <img height="120px" width="200px" src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>" class="img-responsive img-curve">
                                           <?php
                                   }
                             ?>

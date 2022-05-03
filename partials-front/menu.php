@@ -10,6 +10,7 @@
     <link rel="icon" href="images/pizza-logo.png">
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>

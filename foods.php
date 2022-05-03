@@ -39,7 +39,10 @@
                                         echo "<div class='error'>Image not Available.</div>";
                                     }else{
                                         ?>
-                                        <img width="150" height="150" src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>"
+                                        <img style="cursor: pointer"
+                                             onclick="location.href='<?php echo SITEURL;?>images/food/<?php echo $image_name;?>'"
+                                             width="150px" height="150px"
+                                             src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>"
                                              class="img-responsive img-curve">
                                         <?php
                                     }
@@ -47,7 +50,9 @@
                             </div>
 
                             <div class="food-menu-desc">
-                                <h4><?php echo $title;?></h4>
+                                <h4 class="food-title"
+                                    onclick="location.href='<?php echo SITEURL;?>product.php?food_id=<?php echo $id;?>'"
+                                ><?php echo $title;?></h4>
                                 <p class="food-price">$<?php echo $price;?></p>
                                 <p class="food-detail"><?php
                                     if (strlen($description) > 120) {

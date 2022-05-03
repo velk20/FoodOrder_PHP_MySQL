@@ -63,6 +63,14 @@ a:hover{
     color: white;
     background-color: #ff4757;
 }
+.food-title{
+    color: black;
+}
+
+.food-title:hover{
+    color: #ff4757;
+    cursor: pointer;
+}
 h2{
     color: #2f3542;
     font-size: 2rem;
