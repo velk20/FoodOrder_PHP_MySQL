@@ -5,6 +5,7 @@
     <title>Login - Food Order System</title>
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="icon" href="../images/pizza-logo.png">
 
 </head>
     <body>
@@ -47,8 +48,13 @@
 
 <?php
 if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
+
+    //escaping username and password
+    $username = mysqli_real_escape_string($conn,$_POST['username']);
+
+    //md5 -> return a hash func that crypt the password
+    $raw_password = md5($_POST['password']);
+    $password = mysqli_real_escape_string($conn,$raw_password);
 
     $sql = "SELECT * FROM tbl_admin WHERE username='$username' AND password='$password'";
 

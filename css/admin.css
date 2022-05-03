@@ -217,6 +217,7 @@ table tr td{
 /* Hide the items when the select box is closed: */
 .select-hide {
   display: none;
+
 }
 
 .select-items div:hover, .same-as-selected {
@@ -224,9 +225,10 @@ table tr td{
 }
 .footer {
   position: fixed;
-  height: 100px;
+  height: 65px;
   bottom: 0;
   width: 100%;
   background-color: #ff4757;
   color: white;
+  margin-top: 100px;
 }

@@ -24,7 +24,10 @@
                                 echo "<div class='error'>Category Not Found.</div>";
                             }else {
                                 ?>
-                                <img width="200px" src="<?php echo SITEURL;?>images/category/<?php echo $image_name;?>" class="img-responsive img-curve">
+                                <img width="200px"
+                                     height="350px"
+                                     src="<?php echo SITEURL;?>images/category/<?php echo $image_name;?>"
+                                     class="img-responsive img-curve">
 
                                 <?php
                             }

@@ -5,7 +5,10 @@
         <div class="container">
             <?php
                 //Getting the search keyword
-                $search = $_POST['search'];
+                //with integrated func ("mysqli_real_escape_string")
+                 //  we escape all special characters
+                $search = mysqli_real_escape_string($conn,$_POST['search']);
+
             ?>
             <h2>Foods on Your Search <a href="#" class="text-white"><?php echo $search;?></a></h2>
 

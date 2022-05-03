@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer navbar-fixed-bottom">
+<footer class="footer">
     <div class="wrapper">
         <p class="text-center">
             &copy; 2022 All rights reserved, Aurora Restaurant. Developed By -
