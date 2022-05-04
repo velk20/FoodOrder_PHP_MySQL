@@ -41,6 +41,9 @@
                 <li>
                     <a href="<?php echo SITEURL;?>contacts.php">Contacts</a>
                 </li>
+                <li>
+                    <a href="<?php echo SITEURL;?>admin/login.php">Login</a>
+                </li>
             </ul>
         </div>
 

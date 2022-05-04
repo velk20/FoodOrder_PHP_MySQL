@@ -7,6 +7,7 @@ define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'food-order');
+define('FOOD_EMAIL','angelmladenov333@gmail.com');
 
 //Execute SQL
 //DB Connection
