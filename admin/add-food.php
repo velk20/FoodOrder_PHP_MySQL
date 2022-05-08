@@ -148,6 +148,18 @@
 
             //Image
             if (isset($_FILES['image']['name'])) {
+
+
+                $file_type = $_FILES['image']['type']; //returns the mimetype
+
+                $allowed = array("image/jpeg", "image/gif", "image/png");
+                if(!in_array($file_type, $allowed)) {
+                    $_SESSION['upload'] = "<div class='error'>Only jpg, gif, and png files are allowed.</div>";
+                    header('location:'.SITEURL.'admin/add-food.php');
+                    die();//WE stop process cause wrong image was uploaded
+                }
+
+
                 $image_name = $_FILES['image']['name'];
                 if ($image_name != "") {
                     $source_path = $_FILES['image']['tmp_name'];//current location of the image

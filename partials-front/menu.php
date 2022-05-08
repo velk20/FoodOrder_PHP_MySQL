@@ -45,11 +45,7 @@
                 <li>
                     <a href="<?php echo SITEURL;?>contacts.php">Contacts</a>
                 </li>
-                <li>
-                    <a href="<?php echo SITEURL;?>shopping-cart.php">
-                        <i class="fa fa-shopping-cart"></i>
-                    </a>
-                </li>
+
                 <li>
                     <a href="<?php echo SITEURL;?>admin/login.php">Login</a>
                 </li>

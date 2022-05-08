@@ -53,7 +53,7 @@
                     <input type="hidden" name="price" value="<?php echo $price;?>">
                     <br>
                     <div class="order-label">Description:</div>
-                    <textarea name="desc" rows="10"
+                    <textarea readonly name="desc" rows="10"
                               class="input-responsive" ><?php echo $desc;?></textarea>
 
                 </div>

@@ -25,9 +25,9 @@
             ?>
             <form action="" method="POST" class="text-center">
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-3 col-form-label">Username:</label>
+                    <label id="username" for="inputEmail3" class="col-sm-3 col-form-label">Username:</label>
                     <div class="col-sm-8">
-                        <input type="text" name="username" placeholder="Your Username" class="form-control" id="inputEmail3" >
+                        <input type="text" name="username" placeholder="Your Username" class="form-control" id="username" >
                     </div>
                 </div>
 

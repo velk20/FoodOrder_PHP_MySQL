@@ -14,7 +14,8 @@
         }
         ?>
         <br>
-        <table class="tbl-full">
+        <table class="table tbl-full">
+            <thead>
             <tr >
                 <th>ID</th>
                 <th>Food</th>
@@ -29,6 +30,8 @@
                 <th>Address</th>
                 <th>Actions</th>
             </tr>
+            </thead>
+
 
             <?php
                 $sql = "SELECT * FROM tbl_order ORDER BY id DESC"; // latest order will be on top
@@ -51,6 +54,7 @@
                     $customer_address = $row['customer_address'];
 
                     ?>
+                        <tbody>
                         <tr>
                             <td><?php echo $sn++;?>. </td>
                             <td><?php echo $food;?></td>
@@ -87,11 +91,14 @@
 
                     <?php
                 }
+
             }else{
                 //order not available
                 echo "<tr><td class='error' colspan='12'>Orders Not Available.</td></tr>";
             }
             ?>
+
+                        </tbody>
 
         </table>
     </div>

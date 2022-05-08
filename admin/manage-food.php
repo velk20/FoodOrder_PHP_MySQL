@@ -31,7 +31,7 @@
         <br>
 
         <br>
-        <table class="tbl-full">
+        <table class=" table tbl-full">
             <tr >
                 <th>ID</th>
                 <th>Title</th>

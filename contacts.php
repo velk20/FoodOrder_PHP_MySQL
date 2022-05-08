@@ -8,24 +8,24 @@
 
         <form action="" method="POST" class="order">
             <fieldset>
-                <legend>Your Contact</legend>
+                <legend style="font-weight: bold">Your Contact</legend>
                 <div class="order-label">Full Name</div>
-                <input type="text" name="full-name" placeholder="E.g. Totor Peshev" class="input-responsive" required>
+                <input id="name" type="text" name="full-name" placeholder="E.g. Totor Peshev" class="input-responsive" required>
 
                 <div class="order-label">Phone Number</div>
-                <input type="tel" name="contact" placeholder="E.g. 0878xxxxxx" class="input-responsive" required>
+                <input id="phone" type="tel" name="contact" placeholder="E.g. 0878xxxxxx" class="input-responsive" required>
 
                 <div class="order-label">Email</div>
-                <input type="email" name="email" placeholder="E.g. toshoEGosho@gmail.com" class="input-responsive" required>
+                <input id="email" type="email" name="email" placeholder="E.g. toshoEGosho@gmail.com" class="input-responsive" required>
 
                  <div class="order-label">Subject</div>
-                <input type="text" name="subject" placeholder="E.g. For Pasta, For the dessert"
+                <input id="subject" type="text" name="subject" placeholder="E.g. For Pasta, For the dessert"
                        class="input-responsive" required>
 
                 <div class="order-label">Message</div>
-                <textarea name="msg" rows="10" placeholder="I would like to ask you..." class="input-responsive" required></textarea>
+                <textarea id="body" style="resize: none" name="msg" rows="10" placeholder="I would like to ask you..." class="input-responsive" required></textarea>
 
-                <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+                <input onclick="sendEmail()" type="submit" name="submit" value="Submit" class="btn btn-primary">
             </fieldset>
         </form>
 
@@ -48,6 +48,44 @@
 //        ?>
     </div>
 </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function sendEmail() {
+        var name=$("#name");
+        var phone=$("#phone");
+        var email=$("#email");
+        var subject = $( "#subject");
+        var body = $("#body");
 
+        if (isNotEmpty(name) && isNotEmpty(phone) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)){
+                $.ajax({
+                    url: 'sendEmail.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data:{
+                        name: name.val (),
+                        email: email.val (),
+                        subject: subject.val (),
+                        body: body. val()
+                    }, success: function (response) {
+                        console.log(response);
+
+                    }
+                });
+        }
+        
+    }
+
+    function isNotEmpty(caller){
+        if (caller.val() == ""){
+            caller.css('border','1px solid red');
+            return false;
+        }else{
+            caller.css('border','')
+            return true;
+        }
+    }
+    
+</script>
 <!-- fOOD sEARCH Section Ends Here -->
 <?php include ('partials-front/footer.php');?>
