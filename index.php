@@ -102,7 +102,7 @@ if (isset($_SESSION['order'])) {
                               echo "<div class='error'>Image not Available.</div>";
                           }else{
                               ?>
-                              <div style="width:150px;height:150px;overflow:hidden">
+                              <div style="width:150px;height:150px;overflow:hidden;">
                                   <img style="cursor: pointer"
                                        onclick="location.href='<?php echo SITEURL;?>images/food/<?php echo $image_name;?>'"
 
