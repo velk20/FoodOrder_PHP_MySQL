@@ -44,6 +44,7 @@ if (isset($_SESSION['order'])) {
                   $title = $row['title'];
                   $image_name = $row['image_name'];
                   ?>
+
                   <a href="<?php echo SITEURL;?>category-foods.php?category_id=<?php echo $id;?>">
                       <div class="box-3 float-container">
                           <?php
@@ -60,8 +61,9 @@ if (isset($_SESSION['order'])) {
                           ?>
 
                           <h3 class="float-text text-white" ><a href="<?php echo SITEURL;?>category-foods.php?category_id=<?php echo $id;?>" class="text-white"><?php echo $title;?></a></h3>
-                      </div>
+
                   </a>
+                      </div>
                       <?php
               }
           }else{

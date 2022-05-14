@@ -50,11 +50,13 @@ if (isset($_GET['category_id'])) {
                                 echo "<div class='error'>Image not Available.</div>";
                             }else{
                                 ?>
-                                <img style="cursor: pointer"
-                                     onclick="location.href='<?php echo SITEURL;?>images/food/<?php echo $image_name;?>'"
-                                     width="150px" height="150px"
-                                     src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>"
-                                     class="img-responsive img-curve">
+                                <div style="width:150px;height:150px;overflow:hidden">
+                                    <img style="cursor: pointer"
+                                         onclick="location.href='<?php echo SITEURL;?>images/food/<?php echo $image_name;?>'"
+
+                                         src="<?php echo SITEURL;?>images/food/<?php echo $image_name;?>"
+                                         class="img-responsive img-curve">
+                                </div>
                                 <?php
                             }
                             ?>
