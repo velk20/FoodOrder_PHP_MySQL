@@ -27,35 +27,29 @@ This is my first project with PHP and MySQL. It is a ready-to-use web applicatio
 <br/><br/>
 
 ## :wrench: Database Diagram
-<kbd><img src="" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/DB-food-order.jpg" /></kbd>
 <br/><br/>
 
 ## 📸 Application screenshots
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/01.Home%20Page%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/InitialPage.jpg" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/02.Home%20Page%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/admins.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/03.My%20Profile%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/categories-admin.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/04.All%20users%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src= "https://github.com/velk20/food-order/blob/main/images/appScreenshots/categories.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/05.%20Muscle%20groups%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/contacts.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/06.All%20exercises%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/dashboard.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/07.Exercise%20Diary%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/foods.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/08.Food%20diary%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/indexPage.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/09.Forum%20post-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/login.png" /></kbd>
 <br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/10.All%20articles%20-%20MyFitnessApp.png" /></kbd>
-<br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/11.Article%20-%20MyFitnessApp.png" /></kbd>
-<br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/12.Admin%20dashboard%20-%20MyFitnessApp.png" /></kbd>
-<br/><br/>
-<kbd><img src="https://github.com/GeorgiGradev/MyFitnessApp/blob/main/MyFitnessApp/AppScreenshots/13.Admin%20area%20Users%20-%20MyFitnessApp.png" /></kbd>
+<kbd><img src="https://github.com/velk20/food-order/blob/main/images/appScreenshots/orders.png" /></kbd>
 <br/><br/>
 
 ## :v: Leave a feedback
