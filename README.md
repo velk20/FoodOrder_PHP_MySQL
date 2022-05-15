@@ -56,6 +56,3 @@ This is my first project with PHP and MySQL. It is a ready-to-use web applicatio
 Give a :star: if you like it.
 Thank you ❤️
 <br/><br/>
-
-## 📖 License
-See the [LICENSE]() file for details
